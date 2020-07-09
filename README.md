@@ -6,8 +6,8 @@ My notes & tweaks to ToyKeeper's excellent [anduril UI](https://code.launchpad.n
 ## reqs
 `sudo apt-get install binutils gcc-avr avr-libc uisp avrdude`
 
-## building
-`cd spaghetti-monster/anduril && ./build_all.sh`
+## compiling
+`cd spaghetti-monster/anduril && ./build-all.sh`
 
 ## flashing
 ### test connection
