@@ -6,6 +6,16 @@ My notes & tweaks to ToyKeeper's excellent [anduril UI](https://code.launchpad.n
 ## reqs
 `sudo apt-get install binutils gcc-avr avr-libc uisp avrdude`
 
+## building
+`cd spaghetti-monster/anduril && ./build_all.sh`
+
+## flashing
+### test connection
+`avrdude -p t#### -c usbasp -n`, e.g. `avrdude -p t1634 -c usbasp -n` for attiny1634
+
+### flash bin
+`avrdude -p t#### -c usbasp -u -Uflash:w:TARGETHEXFILE.hex` e.g. `avrdude -p t1634 -c usbasp -u -Uflash:w:anduril.noctigon-kr4-russ.hex`
+
 
 ## aux color mapping
 ```
