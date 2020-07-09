@@ -1,6 +1,6 @@
 # anduril-ui
 
-My notes & tweaks to ToyKeeper's excellent [anduril UI](https://code.launchpad.net/~toykeeper/flashlight-firmware/fsm)
+My notes & tweaks to [ToyKeeper's](http://toykeeper.net/) excellent [anduril UI](https://code.launchpad.net/~toykeeper/flashlight-firmware/fsm)
 
 
 ## reqs
@@ -28,7 +28,6 @@ const PROGMEM uint8_t rgb_led_colors[] = {
     0b00010001,  // 5: purple
     0b00010101,  // 6: white
 };
-
 
 0x10    low, red
 0x11    low, yellow
