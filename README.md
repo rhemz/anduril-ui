@@ -19,6 +19,17 @@ My notes & tweaks to ToyKeeper's excellent [anduril UI](https://code.launchpad.n
 
 ## aux color mapping
 ```
+const PROGMEM uint8_t rgb_led_colors[] = {
+    0b00000001,  // 0: red
+    0b00000101,  // 1: yellow
+    0b00000100,  // 2: green
+    0b00010100,  // 3: cyan
+    0b00010000,  // 4: blue
+    0b00010001,  // 5: purple
+    0b00010101,  // 6: white
+};
+
+
 0x10    low, red
 0x11    low, yellow
 0x12    low, green
