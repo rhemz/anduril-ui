@@ -20,7 +20,7 @@ make clean
 `avrdude -p t#### -c usbasp -n`, e.g. `avrdude -p t1634 -c usbasp -n` for attiny1634
 
 ### flash bin
-`avrdude -p t#### -c usbasp -u -Uflash:w:TARGETHEXFILE.hex` e.g. `avrdude -p t1634 -c usbasp -u -Uflash:w:anduril.noctigon-kr4-russ.hex`
+`avrdude -p t#### -c usbasp -u -Uflash:w:TARGETHEXFILE.hex` e.g. `avrdude -p t1634 -c usbasp -u -Uflash:w:anduril.noctigon-kr4-russ-muggleplus.hex`
 
 
 ## aux color mapping
