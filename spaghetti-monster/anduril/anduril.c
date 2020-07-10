@@ -1919,9 +1919,20 @@ uint8_t muggle_state(Event event, uint16_t arg) {
     static int8_t ramp_direction;
     static int8_t muggle_off_mode;
 
+    #ifdef USE_AUX_RGB_LEDS
+        uint8_t rgb_led_off_mode = RGB_LED_OFF_DEFAULT;
+        rgb_led_update(rgb_led_off_mode, 0);
+    #endif
+
     // turn LED off when we first enter the mode
     if (event == EV_enter_state) {
         ramp_direction = 1;
+
+        // enable aux LEDs in muggleplus
+        #ifdef USE_AUX_RGB_LEDS
+            rgb_led_update(rgb_led_off_mode, 0);
+        #endif
+
 
         #ifdef START_AT_MEMORIZED_LEVEL
             memorized_level = arg;
@@ -1962,6 +1973,10 @@ uint8_t muggle_state(Event event, uint16_t arg) {
         muggle_off_mode ^= 1;
         if (muggle_off_mode) {
             set_level(0);
+
+            #ifdef USE_AUX_RGB_LEDS
+                rgb_led_update(rgb_led_off_mode, 0);
+            #endif
         }
         /*
         else {
