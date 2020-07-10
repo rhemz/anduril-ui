@@ -7,7 +7,13 @@ My notes & tweaks to [ToyKeeper's](http://toykeeper.net/) excellent [anduril UI]
 `sudo apt-get install binutils gcc-avr avr-libc uisp avrdude`
 
 ## compiling
-`cd spaghetti-monster/anduril && ./build-all.sh`
+```
+# from spaghetti-monster/anduril/
+make all
+
+# clean up
+make clean
+```
 
 ## flashing
 ### test connection
